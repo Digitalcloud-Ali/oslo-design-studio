@@ -29,7 +29,7 @@ A modern, fully responsive, bilingual (English/Norwegian) website built with Ast
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/Digitalcloud-Ali/oslo-design-studio.git
+git clone https://github.com/rayice/oslo-design-studio.git
 cd oslo-design-studio
 ```
 
@@ -195,7 +195,3 @@ Contributions, issues, and feature requests are welcome!
 For inquiries about this project:
 - Visit: [digitalcloud.no](https://digitalcloud.no)
 - GitHub: [@Digitalcloud-Ali](https://github.com/Digitalcloud-Ali)
-
----
-
-**Built with ❤️ using Astro**
