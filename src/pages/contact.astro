@@ -1,0 +1,557 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Contact Us - Oslo Design Studio">
+  <!-- Page Header -->
+  <section class="page-header">
+    <div class="container">
+      <h1>Get In Touch</h1>
+      <p>Let's discuss how we can help bring your vision to life</p>
+    </div>
+  </section>
+
+  <!-- Contact Content -->
+  <section class="section contact-section">
+    <div class="container">
+      <div class="contact-grid">
+        <!-- Contact Form -->
+        <div class="contact-form-container">
+          <h2>Send Us a Message</h2>
+          <p class="form-intro">Fill out the form below and we'll get back to you within 24 hours.</p>
+          
+          <form class="contact-form" id="contactForm">
+            <div class="form-group">
+              <label for="name">Full Name *</label>
+              <input type="text" id="name" name="name" required placeholder="Your name">
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email Address *</label>
+              <input type="email" id="email" name="email" required placeholder="your.email@example.com">
+            </div>
+
+            <div class="form-group">
+              <label for="phone">Phone Number</label>
+              <input type="tel" id="phone" name="phone" placeholder="+47 123 45 678">
+            </div>
+
+            <div class="form-group">
+              <label for="company">Company Name</label>
+              <input type="text" id="company" name="company" placeholder="Your company">
+            </div>
+
+            <div class="form-group">
+              <label for="service">Service Interested In *</label>
+              <select id="service" name="service" required>
+                <option value="">Select a service</option>
+                <option value="branding">Brand Identity & Strategy</option>
+                <option value="web">Web Design & Development</option>
+                <option value="ui-ux">UI/UX Design</option>
+                <option value="marketing">Digital Marketing</option>
+                <option value="motion">Motion Graphics & Video</option>
+                <option value="consulting">Consulting & Strategy</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="budget">Project Budget (NOK)</label>
+              <select id="budget" name="budget">
+                <option value="">Select budget range</option>
+                <option value="under-50k">Under 50,000</option>
+                <option value="50k-100k">50,000 - 100,000</option>
+                <option value="100k-200k">100,000 - 200,000</option>
+                <option value="200k-500k">200,000 - 500,000</option>
+                <option value="over-500k">Over 500,000</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="message">Project Details *</label>
+              <textarea id="message" name="message" rows="6" required placeholder="Tell us about your project, goals, timeline, etc."></textarea>
+            </div>
+
+            <div class="form-group checkbox-group">
+              <label>
+                <input type="checkbox" name="newsletter" id="newsletter">
+                <span>Subscribe to our newsletter for design tips and updates</span>
+              </label>
+            </div>
+
+            <button type="submit" class="btn btn-submit">Send Message</button>
+            
+            <div class="form-message" id="formMessage"></div>
+          </form>
+        </div>
+
+        <!-- Contact Information -->
+        <div class="contact-info">
+          <div class="info-card">
+            <h3>Visit Our Studio</h3>
+            <div class="info-item">
+              <div class="info-icon">📍</div>
+              <div>
+                <strong>Address</strong>
+                <p>Bogstadveien 27<br/>0355 Oslo, Norway</p>
+              </div>
+            </div>
+            <div class="info-item">
+              <div class="info-icon">🕐</div>
+              <div>
+                <strong>Office Hours</strong>
+                <p>Monday - Friday: 9:00 - 17:00<br/>Weekend: By appointment</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="info-card">
+            <h3>Contact Details</h3>
+            <div class="info-item">
+              <div class="info-icon">📧</div>
+              <div>
+                <strong>Email</strong>
+                <p><a href="mailto:hello@oslodesign.no">hello@oslodesign.no</a></p>
+              </div>
+            </div>
+            <div class="info-item">
+              <div class="info-icon">📞</div>
+              <div>
+                <strong>Phone</strong>
+                <p><a href="tel:+4722123456">+47 22 12 34 56</a></p>
+              </div>
+            </div>
+          </div>
+
+          <div class="info-card">
+            <h3>Follow Us</h3>
+            <div class="social-links-vertical">
+              <a href="#" class="social-link">
+                <span class="social-icon">📷</span>
+                <span>Instagram</span>
+              </a>
+              <a href="#" class="social-link">
+                <span class="social-icon">💼</span>
+                <span>LinkedIn</span>
+              </a>
+              <a href="#" class="social-link">
+                <span class="social-icon">🎨</span>
+                <span>Behance</span>
+              </a>
+              <a href="#" class="social-link">
+                <span class="social-icon">🐦</span>
+                <span>Twitter</span>
+              </a>
+            </div>
+          </div>
+
+          <div class="info-card map-card">
+            <div class="map-placeholder">
+              <div class="map-overlay">
+                <p>📍 Find us in central Oslo</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="section faq-section">
+    <div class="container">
+      <h2 class="section-title">Frequently Asked Questions</h2>
+      <div class="faq-grid">
+        <div class="faq-item">
+          <h3>What is your typical project timeline?</h3>
+          <p>Project timelines vary based on scope and complexity. A typical branding project takes 4-6 weeks, while a complete website can take 8-12 weeks. We'll provide a detailed timeline during our initial consultation.</p>
+        </div>
+        <div class="faq-item">
+          <h3>Do you work with international clients?</h3>
+          <p>Yes! While we're based in Oslo, we work with clients across Norway, Scandinavia, and internationally. We're experienced in remote collaboration and can communicate in Norwegian and English.</p>
+        </div>
+        <div class="faq-item">
+          <h3>What is your design process?</h3>
+          <p>We follow a structured 6-step process: Discovery, Strategy, Design, Development, Launch, and Support. This ensures we deliver high-quality results that meet your objectives.</p>
+        </div>
+        <div class="faq-item">
+          <h3>Do you offer ongoing support?</h3>
+          <p>Absolutely! We offer various maintenance and support packages to ensure your website or brand materials stay up-to-date and continue performing optimally.</p>
+        </div>
+        <div class="faq-item">
+          <h3>What makes you different?</h3>
+          <p>We combine creative excellence with strategic thinking. Every project is approached with fresh eyes, and we work as true partners with our clients throughout the entire process.</p>
+        </div>
+        <div class="faq-item">
+          <h3>Can I see more of your work?</h3>
+          <p>Certainly! Check out our <a href="/portfolio">portfolio page</a> to see our recent projects. We can also share relevant case studies during our consultation.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>
+
+<style>
+  .page-header {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 6rem 2rem 4rem;
+    text-align: center;
+  }
+
+  .page-header h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+
+  .page-header p {
+    font-size: 1.25rem;
+    opacity: 0.9;
+  }
+
+  /* Contact Section */
+  .contact-section {
+    background: var(--light-bg);
+  }
+
+  .contact-grid {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 3rem;
+  }
+
+  /* Contact Form */
+  .contact-form-container h2 {
+    color: var(--primary-color);
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  .form-intro {
+    color: var(--dark-gray);
+    margin-bottom: 2rem;
+    font-size: 1.05rem;
+  }
+
+  .contact-form {
+    background: white;
+    padding: 2.5rem;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+  }
+
+  .form-group {
+    margin-bottom: 1.5rem;
+  }
+
+  .form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: var(--primary-color);
+    font-weight: 600;
+  }
+
+  .form-group input,
+  .form-group select,
+  .form-group textarea {
+    width: 100%;
+    padding: 1rem;
+    border: 2px solid #E0E0E0;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-family: inherit;
+    transition: border-color 0.3s;
+  }
+
+  .form-group input:focus,
+  .form-group select:focus,
+  .form-group textarea:focus {
+    outline: none;
+    border-color: var(--accent-color);
+  }
+
+  .form-group textarea {
+    resize: vertical;
+  }
+
+  .checkbox-group label {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    cursor: pointer;
+  }
+
+  .checkbox-group input[type="checkbox"] {
+    width: auto;
+    cursor: pointer;
+  }
+
+  .btn-submit {
+    width: 100%;
+    padding: 1.25rem;
+    font-size: 1.1rem;
+  }
+
+  .form-message {
+    margin-top: 1rem;
+    padding: 1rem;
+    border-radius: 8px;
+    text-align: center;
+    display: none;
+  }
+
+  .form-message.success {
+    background: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+    display: block;
+  }
+
+  .form-message.error {
+    background: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+    display: block;
+  }
+
+  /* Contact Info */
+  .contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .info-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+  }
+
+  .info-card h3 {
+    color: var(--primary-color);
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .info-item {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+    align-items: flex-start;
+  }
+
+  .info-item:last-child {
+    margin-bottom: 0;
+  }
+
+  .info-icon {
+    font-size: 1.5rem;
+    flex-shrink: 0;
+  }
+
+  .info-item strong {
+    display: block;
+    color: var(--primary-color);
+    margin-bottom: 0.25rem;
+  }
+
+  .info-item p {
+    color: var(--dark-gray);
+    margin: 0;
+  }
+
+  .info-item a {
+    color: var(--accent-color);
+    text-decoration: none;
+  }
+
+  .info-item a:hover {
+    text-decoration: underline;
+  }
+
+  .social-links-vertical {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .social-link {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 0.75rem;
+    background: var(--light-bg);
+    border-radius: 8px;
+    text-decoration: none;
+    color: var(--text-color);
+    transition: all 0.3s;
+  }
+
+  .social-link:hover {
+    background: var(--secondary-color);
+    color: white;
+    transform: translateX(5px);
+  }
+
+  .social-icon {
+    font-size: 1.5rem;
+  }
+
+  .map-card {
+    padding: 0;
+    overflow: hidden;
+    min-height: 250px;
+  }
+
+  .map-placeholder {
+    width: 100%;
+    height: 100%;
+    min-height: 250px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .map-overlay {
+    color: white;
+    font-size: 1.25rem;
+    text-align: center;
+  }
+
+  /* FAQ Section */
+  .faq-section {
+    background: white;
+  }
+
+  .faq-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+  }
+
+  .faq-item {
+    padding: 2rem;
+    background: var(--light-bg);
+    border-radius: 15px;
+    border-left: 4px solid var(--secondary-color);
+  }
+
+  .faq-item h3 {
+    color: var(--primary-color);
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+  }
+
+  .faq-item p {
+    color: var(--dark-gray);
+    line-height: 1.6;
+  }
+
+  .faq-item a {
+    color: var(--accent-color);
+    text-decoration: none;
+  }
+
+  .faq-item a:hover {
+    text-decoration: underline;
+  }
+
+  /* Responsive */
+  @media (max-width: 968px) {
+    .contact-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .page-header h1 {
+      font-size: 2rem;
+    }
+
+    .page-header p {
+      font-size: 1rem;
+    }
+
+    .contact-form {
+      padding: 1.5rem;
+    }
+
+    .faq-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>
+
+<script>
+  // Form submission handling
+  const contactForm = document.getElementById('contactForm');
+  const formMessage = document.getElementById('formMessage');
+
+  if (contactForm && formMessage) {
+    contactForm.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      
+      // Get form data
+      const formData = new FormData(contactForm);
+      const data = Object.fromEntries(formData);
+      
+      // Show loading state
+      const submitBtn = contactForm.querySelector('.btn-submit');
+      const originalText = submitBtn?.textContent;
+      if (submitBtn) {
+        submitBtn.textContent = 'Sending...';
+        submitBtn.setAttribute('disabled', 'true');
+      }
+      
+      // Simulate form submission (replace with actual API endpoint)
+      setTimeout(() => {
+        // Success message
+        formMessage.textContent = 'Thank you for your message! We\'ll get back to you within 24 hours.';
+        formMessage.className = 'form-message success';
+        
+        // Reset form
+        contactForm.reset();
+        
+        // Reset button
+        if (submitBtn && originalText) {
+          submitBtn.textContent = originalText;
+          submitBtn.removeAttribute('disabled');
+        }
+        
+        // Hide message after 5 seconds
+        setTimeout(() => {
+          formMessage.style.display = 'none';
+        }, 5000);
+      }, 1000);
+      
+      // For actual implementation, use:
+      /*
+      try {
+        const response = await fetch('/api/contact', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(data)
+        });
+        
+        if (response.ok) {
+          formMessage.textContent = 'Thank you! We\'ll get back to you soon.';
+          formMessage.className = 'form-message success';
+          contactForm.reset();
+        } else {
+          throw new Error('Failed to send message');
+        }
+      } catch (error) {
+        formMessage.textContent = 'Sorry, something went wrong. Please try again.';
+        formMessage.className = 'form-message error';
+      } finally {
+        if (submitBtn && originalText) {
+          submitBtn.textContent = originalText;
+          submitBtn.removeAttribute('disabled');
+        }
+      }
+      */
+    });
+  }
+</script>

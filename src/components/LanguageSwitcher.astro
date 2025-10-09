@@ -1,0 +1,64 @@
+---
+import { getLangFromUrl, useTranslatedPath } from '../i18n/utils';
+
+const currentLang = getLangFromUrl(Astro.url);
+const translatePath = useTranslatedPath(currentLang);
+const currentPath = Astro.url.pathname;
+---
+
+<div class="language-switcher">
+  <a 
+    href={translatePath(currentPath, 'en')} 
+    class={currentLang === 'en' ? 'active' : ''}
+    aria-label="Switch to English"
+  >
+    EN
+  </a>
+  <span class="separator">|</span>
+  <a 
+    href={translatePath(currentPath, 'no')} 
+    class={currentLang === 'no' ? 'active' : ''}
+    aria-label="Bytt til norsk"
+  >
+    NO
+  </a>
+</div>
+
+<style>
+  .language-switcher {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-weight: 600;
+  }
+
+  .language-switcher a {
+    color: var(--text-color);
+    text-decoration: none;
+    padding: 0.5rem 0.75rem;
+    border-radius: 5px;
+    transition: all 0.3s;
+    font-size: 0.9rem;
+  }
+
+  .language-switcher a:hover {
+    background: var(--light-bg);
+    color: var(--secondary-color);
+  }
+
+  .language-switcher a.active {
+    color: var(--secondary-color);
+    font-weight: bold;
+  }
+
+  .separator {
+    color: var(--gray);
+  }
+
+  @media (max-width: 768px) {
+    .language-switcher {
+      justify-content: center;
+      padding: 1rem 0;
+    }
+  }
+</style>

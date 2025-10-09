@@ -1,0 +1,361 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import { useTranslations } from '../../i18n/translations';
+
+const t = useTranslations('no');
+---
+
+<Layout title="Tjenester - Oslo Design Studio">
+  <!-- Page Header -->
+  <section class="page-header">
+    <div class="container">
+      <h1>Våre Tjenester</h1>
+      <p>Omfattende designløsninger skreddersydd til dine forretningsbehov</p>
+    </div>
+  </section>
+
+  <!-- Services Detail -->
+  <section class="section services-detail">
+    <div class="container">
+      <div class="service-item">
+        <div class="service-content">
+          <div class="service-icon-large">🎨</div>
+          <h2>{t.services.brandIdentity}</h2>
+          <p class="service-description">{t.services.brandDesc}</p>
+          <ul class="service-features">
+            <li>Logo Design & Merkevareretningslinjer</li>
+            <li>Visuell Identitetssystemer</li>
+            <li>Merkestrategi & Posisjonering</li>
+            <li>Print & Emballasjedesign</li>
+            <li>Merkevareoppfriskning & Redesign</li>
+          </ul>
+          <div class="service-pricing">
+            <strong>{t.services.startingFrom}:</strong> 45 000 NOK
+          </div>
+        </div>
+      </div>
+
+      <div class="service-item reverse">
+        <div class="service-content">
+          <div class="service-icon-large">💻</div>
+          <h2>{t.services.webDesign}</h2>
+          <p class="service-description">{t.services.webDesc}</p>
+          <ul class="service-features">
+            <li>Tilpasset Nettstedsdesign</li>
+            <li>Responsiv & Mobile-First Utvikling</li>
+            <li>E-handelsløsninger</li>
+            <li>Innholdsstyringssystemer</li>
+            <li>Nettstedsvedlikehold & Support</li>
+          </ul>
+          <div class="service-pricing">
+            <strong>{t.services.startingFrom}:</strong> 35 000 NOK
+          </div>
+        </div>
+      </div>
+
+      <div class="service-item">
+        <div class="service-content">
+          <div class="service-icon-large">📱</div>
+          <h2>{t.services.uiUx}</h2>
+          <p class="service-description">{t.services.uiUxDesc}</p>
+          <ul class="service-features">
+            <li>Brukerundersøkelse & Testing</li>
+            <li>Informasjonsarkitektur</li>
+            <li>Wireframing & Prototyping</li>
+            <li>Grensesnittdesign</li>
+            <li>Brukervennlighetsoptimalisering</li>
+          </ul>
+          <div class="service-pricing">
+            <strong>{t.services.startingFrom}:</strong> 28 000 NOK
+          </div>
+        </div>
+      </div>
+
+      <div class="service-item reverse">
+        <div class="service-content">
+          <div class="service-icon-large">📊</div>
+          <h2>{t.services.digitalMarketing}</h2>
+          <p class="service-description">{t.services.marketingDesc}</p>
+          <ul class="service-features">
+            <li>Sosiale Medier Grafikk & Kampanjer</li>
+            <li>Innholdsstrategi & Produksjon</li>
+            <li>E-postmarkedsføringsdesign</li>
+            <li>Digital Annonsering</li>
+            <li>Analyser & Ytelsessporing</li>
+          </ul>
+          <div class="service-pricing">
+            <strong>{t.services.startingFrom}:</strong> 20 000 NOK/måned
+          </div>
+        </div>
+      </div>
+
+      <div class="service-item">
+        <div class="service-content">
+          <div class="service-icon-large">🎬</div>
+          <h2>{t.services.motionGraphics}</h2>
+          <p class="service-description">{t.services.motionDesc}</p>
+          <ul class="service-features">
+            <li>Merkeanimasjon & Motion Graphics</li>
+            <li>Forklaringsvideoer</li>
+            <li>Videoinnhold for Sosiale Medier</li>
+            <li>Produktdemonstrasjoner</li>
+            <li>Videoredigering & Postproduksjon</li>
+          </ul>
+          <div class="service-pricing">
+            <strong>{t.services.startingFrom}:</strong> 32 000 NOK
+          </div>
+        </div>
+      </div>
+
+      <div class="service-item reverse">
+        <div class="service-content">
+          <div class="service-icon-large">🚀</div>
+          <h2>{t.services.consulting}</h2>
+          <p class="service-description">{t.services.consultingDesc}</p>
+          <ul class="service-features">
+            <li>Designrevisjoner & Gjennomganger</li>
+            <li>Digital Strategiplanlegging</li>
+            <li>Konkurranseanalyse</li>
+            <li>Utvikling av Designsystem</li>
+            <li>Workshop Fasilitering</li>
+          </ul>
+          <div class="service-pricing">
+            <strong>{t.services.hourlyRate}:</strong> 1 500 NOK/time
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Process Section -->
+  <section class="section process-section">
+    <div class="container">
+      <h2 class="section-title">{t.services.processTitle}</h2>
+      <div class="process-grid">
+        <div class="process-step">
+          <div class="step-number">01</div>
+          <h3>Oppdagelse</h3>
+          <p>Vi starter med å forstå din virksomhet, mål og målgruppe gjennom grundig forskning og konsultasjon.</p>
+        </div>
+        <div class="process-step">
+          <div class="step-number">02</div>
+          <h3>Strategi</h3>
+          <p>Basert på funnene våre utvikler vi en omfattende strategi som samkjører design med forretningmålene dine.</p>
+        </div>
+        <div class="process-step">
+          <div class="step-number">03</div>
+          <h3>Design</h3>
+          <p>Det kreative teamet vårt bringer strategien til live med fantastisk visuelt og intuitiv brukeropplevelse.</p>
+        </div>
+        <div class="process-step">
+          <div class="step-number">04</div>
+          <h3>Utvikling</h3>
+          <p>Vi transformerer design til funksjonelle, høyytelse digitale produkter ved hjelp av moderne teknologier.</p>
+        </div>
+        <div class="process-step">
+          <div class="step-number">05</div>
+          <h3>Lansering</h3>
+          <p>Etter grundig testing lanserer vi prosjektet ditt og sikrer at alt fungerer perfekt fra dag én.</p>
+        </div>
+        <div class="process-step">
+          <div class="step-number">06</div>
+          <h3>Support</h3>
+          <p>Forholdet vårt slutter ikke med lansering. Vi gir løpende støtte for å hjelpe prosjektet ditt med å lykkes.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="cta-section">
+    <div class="container">
+      <h2>{t.services.ctaTitle}</h2>
+      <p>{t.services.ctaSubtitle}</p>
+      <a href="/no/contact" class="btn">{t.services.requestQuote}</a>
+    </div>
+  </section>
+</Layout>
+
+<style>
+  .page-header {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 6rem 2rem 4rem;
+    text-align: center;
+  }
+
+  .page-header h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+
+  .page-header p {
+    font-size: 1.25rem;
+    opacity: 0.9;
+  }
+
+  .services-detail {
+    background: var(--light-bg);
+  }
+
+  .service-item {
+    background: white;
+    border-radius: 15px;
+    padding: 3rem;
+    margin-bottom: 3rem;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+
+  .service-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.12);
+  }
+
+  .service-content {
+    max-width: 800px;
+  }
+
+  .service-icon-large {
+    font-size: 4rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .service-content h2 {
+    color: var(--primary-color);
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  .service-description {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 2rem;
+    color: var(--text-color);
+  }
+
+  .service-features {
+    list-style: none;
+    margin-bottom: 2rem;
+  }
+
+  .service-features li {
+    padding: 0.75rem 0;
+    padding-left: 2rem;
+    position: relative;
+    color: var(--text-color);
+  }
+
+  .service-features li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: var(--secondary-color);
+    font-weight: bold;
+    font-size: 1.2rem;
+  }
+
+  .service-pricing {
+    padding: 1.5rem;
+    background: var(--light-bg);
+    border-radius: 10px;
+    border-left: 4px solid var(--secondary-color);
+    font-size: 1.1rem;
+  }
+
+  .service-pricing strong {
+    color: var(--primary-color);
+  }
+
+  /* Process Section */
+  .process-section {
+    background: white;
+  }
+
+  .process-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+  }
+
+  .process-step {
+    text-align: center;
+    padding: 2rem;
+    background: var(--light-bg);
+    border-radius: 10px;
+    transition: transform 0.3s;
+  }
+
+  .process-step:hover {
+    transform: translateY(-5px);
+  }
+
+  .step-number {
+    font-size: 3rem;
+    font-weight: bold;
+    color: var(--secondary-color);
+    margin-bottom: 1rem;
+    opacity: 0.8;
+  }
+
+  .process-step h3 {
+    color: var(--primary-color);
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .process-step p {
+    color: var(--dark-gray);
+    line-height: 1.6;
+  }
+
+  /* CTA Section */
+  .cta-section {
+    background: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 4rem 2rem;
+  }
+
+  .cta-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .cta-section p {
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+    opacity: 0.9;
+  }
+
+  /* Responsive */
+  @media (max-width: 768px) {
+    .page-header h1 {
+      font-size: 2rem;
+    }
+
+    .page-header p {
+      font-size: 1rem;
+    }
+
+    .service-item {
+      padding: 2rem;
+    }
+
+    .service-icon-large {
+      font-size: 3rem;
+    }
+
+    .service-content h2 {
+      font-size: 1.5rem;
+    }
+
+    .process-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .cta-section h2 {
+      font-size: 2rem;
+    }
+  }
+</style>
